@@ -1,6 +1,6 @@
 #include "Level.h"
 
-Level::Level(sf::RenderWindow* hwnd, Input* in)
+Level::Level(sf::RenderWindow* hwnd, Input* in) : Map1(hwnd)
 {
 	window = hwnd;
 	input = in;
@@ -30,7 +30,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	Map1.render();
 	endDraw();
 }
 

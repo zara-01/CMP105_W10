@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "TileMapManager.h"
 
 
 class Level{
@@ -21,6 +22,9 @@ private:
 	void endDraw();
 
 	// Default variables for level class.
+
 	sf::RenderWindow* window;
 	Input* input;
+	TileMapManager Map1;
+
 };
